@@ -42,14 +42,14 @@ enum StocksAPI: Endpoint {
 
     var parameters: [URLQueryItem] {
         switch self {
-        case .getPrice(let ticker), .getQuote(let ticker), .getBasicStats(let ticker), .getNews(let ticker):
+        default:
             return [token]
         }
     }
-        var token: URLQueryItem {
-            // Тестовый ключ для sandbox'а, поэтому хранится в открытом доступе
-            return URLQueryItem(name: "token", value: "Tpk_7d60e7252b564e529b85ccbd7dabc185")
 
+    var token: URLQueryItem {
+        // Тестовый ключ для sandbox'а, поэтому хранится в открытом доступе
+        return URLQueryItem(name: "token", value: "Tpk_7d60e7252b564e529b85ccbd7dabc185")
 
     }
 }
