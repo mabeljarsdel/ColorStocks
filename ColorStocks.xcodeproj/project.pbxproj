@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B55E059B270F5BF4009584DC /* StocksAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E059A270F5BF4009584DC /* StocksAPIConfig.swift */; };
+		B55E059C270F5BF4009584DC /* StocksAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E059A270F5BF4009584DC /* StocksAPIConfig.swift */; };
+		B55E059E270F5C5D009584DC /* StockAPIWorker.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E059D270F5C5D009584DC /* StockAPIWorker.swift.swift */; };
+		B55E059F270F5C5D009584DC /* StockAPIWorker.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E059D270F5C5D009584DC /* StockAPIWorker.swift.swift */; };
+		B55E05A1270F5C7B009584DC /* StockAPIResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E05A0270F5C7B009584DC /* StockAPIResponseModels.swift */; };
+		B55E05A2270F5C7B009584DC /* StockAPIResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E05A0270F5C7B009584DC /* StockAPIResponseModels.swift */; };
 		B5E636DC27088DA20002B738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E636DB27088DA20002B738 /* AppDelegate.swift */; };
 		B5E636DE27088DA20002B738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E636DD27088DA20002B738 /* SceneDelegate.swift */; };
 		B5E636E027088DA20002B738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E636DF27088DA20002B738 /* ViewController.swift */; };
@@ -26,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B55E059A270F5BF4009584DC /* StocksAPIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAPIConfig.swift; sourceTree = "<group>"; };
+		B55E059D270F5C5D009584DC /* StockAPIWorker.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAPIWorker.swift.swift; sourceTree = "<group>"; };
+		B55E05A0270F5C7B009584DC /* StockAPIResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAPIResponseModels.swift; sourceTree = "<group>"; };
 		B5E636D827088DA20002B738 /* ColorStocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorStocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E636DB27088DA20002B738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E636DD27088DA20002B738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +64,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B55E0598270F5BD0009584DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B55E0599270F5BD9009584DC /* StocksAPI */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B55E0599270F5BD9009584DC /* StocksAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B55E059A270F5BF4009584DC /* StocksAPIConfig.swift */,
+				B55E05A0270F5C7B009584DC /* StockAPIResponseModels.swift */,
+				B55E059D270F5C5D009584DC /* StockAPIWorker.swift.swift */,
+			);
+			path = StocksAPI;
+			sourceTree = "<group>";
+		};
 		B5E636CF27088DA10002B738 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +103,7 @@
 		B5E636DA27088DA20002B738 /* ColorStocks */ = {
 			isa = PBXGroup;
 			children = (
+				B55E0598270F5BD0009584DC /* Services */,
 				B5E636DB27088DA20002B738 /* AppDelegate.swift */,
 				B5E636DD27088DA20002B738 /* SceneDelegate.swift */,
 				B5E636DF27088DA20002B738 /* ViewController.swift */,
@@ -195,8 +223,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E636E027088DA20002B738 /* ViewController.swift in Sources */,
+				B55E059E270F5C5D009584DC /* StockAPIWorker.swift.swift in Sources */,
+				B55E05A1270F5C7B009584DC /* StockAPIResponseModels.swift in Sources */,
 				B5E636DC27088DA20002B738 /* AppDelegate.swift in Sources */,
 				B5E636DE27088DA20002B738 /* SceneDelegate.swift in Sources */,
+				B55E059B270F5BF4009584DC /* StocksAPIConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55E05A2270F5C7B009584DC /* StockAPIResponseModels.swift in Sources */,
 				B5E636F327088DA40002B738 /* ColorStocksTests.swift in Sources */,
+				B55E059F270F5C5D009584DC /* StockAPIWorker.swift.swift in Sources */,
+				B55E059C270F5BF4009584DC /* StocksAPIConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
