@@ -19,14 +19,14 @@ enum StocksAPI: Endpoint {
     case getQuote(ticker: String)
     case getBasicStats(ticker: String)
     case getNews(ticker: String)
-    
+
     var baseURL: String {
         switch self {
         default:
             return "sandbox.iexapis.com"
         }
     }
-    
+
     var path: String {
         switch self {
         case .getPrice(let ticker):
@@ -39,7 +39,7 @@ enum StocksAPI: Endpoint {
             return "/stable/time-series/news/\(ticker)"
         }
     }
-    
+
     var parameters: [URLQueryItem] {
         switch self {
         case .getPrice(let ticker), .getQuote(let ticker), .getBasicStats(let ticker), .getNews(let ticker):
@@ -49,6 +49,7 @@ enum StocksAPI: Endpoint {
         var token: URLQueryItem {
             // Тестовый ключ для sandbox'а, поэтому хранится в открытом доступе
             return URLQueryItem(name: "token", value: "Tpk_7d60e7252b564e529b85ccbd7dabc185")
-        
+
+
     }
 }
