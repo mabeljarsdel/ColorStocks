@@ -82,6 +82,17 @@
 			path = StocksAPI;
 			sourceTree = "<group>";
 		};
+		B55E05A3270F67F3009584DC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5E636DB27088DA20002B738 /* AppDelegate.swift */,
+				B5E636DD27088DA20002B738 /* SceneDelegate.swift */,
+				B5E636E927088DA40002B738 /* Info.plist */,
+				B5E636E627088DA40002B738 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		B5E636CF27088DA10002B738 = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +114,10 @@
 		B5E636DA27088DA20002B738 /* ColorStocks */ = {
 			isa = PBXGroup;
 			children = (
+				B55E05A3270F67F3009584DC /* App */,
 				B55E0598270F5BD0009584DC /* Services */,
-				B5E636DB27088DA20002B738 /* AppDelegate.swift */,
-				B5E636DD27088DA20002B738 /* SceneDelegate.swift */,
 				B5E636DF27088DA20002B738 /* ViewController.swift */,
 				B5E636E427088DA40002B738 /* Assets.xcassets */,
-				B5E636E627088DA40002B738 /* LaunchScreen.storyboard */,
-				B5E636E927088DA40002B738 /* Info.plist */,
 			);
 			path = ColorStocks;
 			sourceTree = "<group>";
@@ -410,7 +418,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X3C4UMBA4P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorStocks/Info.plist;
+				INFOPLIST_FILE = ColorStocks/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -438,7 +446,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X3C4UMBA4P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorStocks/Info.plist;
+				INFOPLIST_FILE = ColorStocks/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
